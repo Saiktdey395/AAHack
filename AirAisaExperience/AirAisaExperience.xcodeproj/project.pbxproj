@@ -17,11 +17,15 @@
 		317C28162037E48D00389513 /* AirAisaExperienceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C28152037E48D00389513 /* AirAisaExperienceUITests.swift */; };
 		317C28282037E56100389513 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C28272037E56100389513 /* Constants.swift */; };
 		317C282A2037E58B00389513 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C28292037E58B00389513 /* DataModel.swift */; };
-		317C282C2037E5A600389513 /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C282B2037E5A600389513 /* NetworkUtility.swift */; };
+		317C282C2037E5A600389513 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C282B2037E5A600389513 /* NetworkUtil.swift */; };
 		317C282E2037EE6200389513 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C282D2037EE6200389513 /* LoginViewController.swift */; };
 		317C28302037EEDC00389513 /* FlightDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C282F2037EEDC00389513 /* FlightDetailsViewController.swift */; };
 		317C28322037EEF000389513 /* PassengerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C28312037EEF000389513 /* PassengerDetailsViewController.swift */; };
 		317C28342037EF0400389513 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C28332037EF0400389513 /* FeedbackViewController.swift */; };
+		317C28372037FC3400389513 /* PassengerTableViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C28362037FC3400389513 /* PassengerTableViewCustomCell.swift */; };
+		317C2839203806A800389513 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C2838203806A800389513 /* Extensions.swift */; };
+		317C283B2038078500389513 /* ObjectModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C283A2038078500389513 /* ObjectModal.swift */; };
+		317C283D2038096D00389513 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 317C283C2038096D00389513 /* response.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,11 +62,15 @@
 		317C28172037E48D00389513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		317C28272037E56100389513 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		317C28292037E58B00389513 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		317C282B2037E5A600389513 /* NetworkUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
+		317C282B2037E5A600389513 /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 		317C282D2037EE6200389513 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		317C282F2037EEDC00389513 /* FlightDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsViewController.swift; sourceTree = "<group>"; };
 		317C28312037EEF000389513 /* PassengerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerDetailsViewController.swift; sourceTree = "<group>"; };
 		317C28332037EF0400389513 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		317C28362037FC3400389513 /* PassengerTableViewCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassengerTableViewCustomCell.swift; sourceTree = "<group>"; };
+		317C2838203806A800389513 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		317C283A2038078500389513 /* ObjectModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectModal.swift; sourceTree = "<group>"; };
+		317C283C2038096D00389513 /* response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,10 +121,11 @@
 		317C27F12037E48D00389513 /* AirAisaExperience */ = {
 			isa = PBXGroup;
 			children = (
+				317C283C2038096D00389513 /* response.json */,
 				317C27F22037E48D00389513 /* AppDelegate.swift */,
 				317C28262037E54500389513 /* Constants */,
 				317C28252037E51600389513 /* Controllers */,
-				317C28242037E50900389513 /* DataModel */,
+				317C28242037E50900389513 /* Business Logic */,
 				317C28232037E4F700389513 /* NetworkUtilClass */,
 				317C27F62037E48D00389513 /* Main.storyboard */,
 				317C27FC2037E48D00389513 /* Assets.xcassets */,
@@ -148,27 +157,30 @@
 		317C28232037E4F700389513 /* NetworkUtilClass */ = {
 			isa = PBXGroup;
 			children = (
-				317C282B2037E5A600389513 /* NetworkUtility.swift */,
+				317C282B2037E5A600389513 /* NetworkUtil.swift */,
 			);
 			path = NetworkUtilClass;
 			sourceTree = "<group>";
 		};
-		317C28242037E50900389513 /* DataModel */ = {
+		317C28242037E50900389513 /* Business Logic */ = {
 			isa = PBXGroup;
 			children = (
+				317C283A2038078500389513 /* ObjectModal.swift */,
 				317C28292037E58B00389513 /* DataModel.swift */,
 			);
-			path = DataModel;
+			path = "Business Logic";
 			sourceTree = "<group>";
 		};
 		317C28252037E51600389513 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				317C28352037FC2200389513 /* CustomCell */,
 				317C27F42037E48D00389513 /* WelcomeViewController.swift */,
 				317C282D2037EE6200389513 /* LoginViewController.swift */,
 				317C282F2037EEDC00389513 /* FlightDetailsViewController.swift */,
 				317C28312037EEF000389513 /* PassengerDetailsViewController.swift */,
 				317C28332037EF0400389513 /* FeedbackViewController.swift */,
+				317C2838203806A800389513 /* Extensions.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +191,14 @@
 				317C28272037E56100389513 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		317C28352037FC2200389513 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				317C28362037FC3400389513 /* PassengerTableViewCustomCell.swift */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317C283D2038096D00389513 /* response.json in Resources */,
 				317C28002037E48D00389513 /* LaunchScreen.storyboard in Resources */,
 				317C27FD2037E48D00389513 /* Assets.xcassets in Resources */,
 				317C27F82037E48D00389513 /* Main.storyboard in Resources */,
@@ -317,10 +338,13 @@
 			files = (
 				317C28322037EEF000389513 /* PassengerDetailsViewController.swift in Sources */,
 				317C282E2037EE6200389513 /* LoginViewController.swift in Sources */,
+				317C283B2038078500389513 /* ObjectModal.swift in Sources */,
+				317C28372037FC3400389513 /* PassengerTableViewCustomCell.swift in Sources */,
 				317C282A2037E58B00389513 /* DataModel.swift in Sources */,
 				317C28342037EF0400389513 /* FeedbackViewController.swift in Sources */,
-				317C282C2037E5A600389513 /* NetworkUtility.swift in Sources */,
+				317C282C2037E5A600389513 /* NetworkUtil.swift in Sources */,
 				317C27F52037E48D00389513 /* WelcomeViewController.swift in Sources */,
+				317C2839203806A800389513 /* Extensions.swift in Sources */,
 				317C27FB2037E48D00389513 /* AirAisaExperience.xcdatamodeld in Sources */,
 				317C28302037EEDC00389513 /* FlightDetailsViewController.swift in Sources */,
 				317C27F32037E48D00389513 /* AppDelegate.swift in Sources */,

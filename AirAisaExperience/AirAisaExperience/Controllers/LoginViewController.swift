@@ -15,6 +15,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.title = "Sign In"
+
     }
     
     override func didReceiveMemoryWarning() {
