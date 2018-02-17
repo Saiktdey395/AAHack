@@ -126,7 +126,7 @@
 				317C28262037E54500389513 /* Constants */,
 				317C28252037E51600389513 /* Controllers */,
 				317C28242037E50900389513 /* Business Logic */,
-				317C28232037E4F700389513 /* NetworkUtilClass */,
+				317C28232037E4F700389513 /* NetworkUtility */,
 				317C27F62037E48D00389513 /* Main.storyboard */,
 				317C27FC2037E48D00389513 /* Assets.xcassets */,
 				317C27FE2037E48D00389513 /* LaunchScreen.storyboard */,
@@ -154,12 +154,12 @@
 			path = AirAisaExperienceUITests;
 			sourceTree = "<group>";
 		};
-		317C28232037E4F700389513 /* NetworkUtilClass */ = {
+		317C28232037E4F700389513 /* NetworkUtility */ = {
 			isa = PBXGroup;
 			children = (
 				317C282B2037E5A600389513 /* NetworkUtil.swift */,
 			);
-			path = NetworkUtilClass;
+			path = NetworkUtility;
 			sourceTree = "<group>";
 		};
 		317C28242037E50900389513 /* Business Logic */ = {
