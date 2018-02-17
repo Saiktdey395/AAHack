@@ -13,7 +13,7 @@ import UIKit
 class FeedbackViewController: UIViewController {
     
     @IBAction func feedbackBtntapped(_ sender: Any) {
-        UIAlertController.notifyUser("Thank you for your Feedack", message: "We hope to see you Soon", alertButtonTitles:["OK"], alertButtonStyles: [.default], vc: self, completion: { (UIAlertAction) in
+        UIAlertController.notifyUser("Thank you for your Feedack", message: "We hope to see you soon", alertButtonTitles:["OK"], alertButtonStyles: [.default], vc: self, completion: { (UIAlertAction) in
             
 //            completionHandler(true as Bool)
         })
