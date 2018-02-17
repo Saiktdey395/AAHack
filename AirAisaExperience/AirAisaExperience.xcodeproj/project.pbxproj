@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		317C27F32037E48D00389513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C27F22037E48D00389513 /* AppDelegate.swift */; };
+		317C27F52037E48D00389513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C27F42037E48D00389513 /* ViewController.swift */; };
+		317C27F82037E48D00389513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317C27F62037E48D00389513 /* Main.storyboard */; };
+		317C27FB2037E48D00389513 /* AirAisaExperience.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 317C27F92037E48D00389513 /* AirAisaExperience.xcdatamodeld */; };
+		317C27FD2037E48D00389513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317C27FC2037E48D00389513 /* Assets.xcassets */; };
+		317C28002037E48D00389513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317C27FE2037E48D00389513 /* LaunchScreen.storyboard */; };
+		317C280B2037E48D00389513 /* AirAisaExperienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C280A2037E48D00389513 /* AirAisaExperienceTests.swift */; };
+		317C28162037E48D00389513 /* AirAisaExperienceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C28152037E48D00389513 /* AirAisaExperienceUITests.swift */; };
+		317C28282037E56100389513 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C28272037E56100389513 /* Constants.swift */; };
+		317C282A2037E58B00389513 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C28292037E58B00389513 /* DataModel.swift */; };
+		317C282C2037E5A600389513 /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C282B2037E5A600389513 /* NetworkUtility.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		317C28072037E48D00389513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 317C27E72037E48D00389513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 317C27EE2037E48D00389513;
+			remoteInfo = AirAisaExperience;
+		};
+		317C28122037E48D00389513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 317C27E72037E48D00389513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 317C27EE2037E48D00389513;
+			remoteInfo = AirAisaExperience;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		317C27EF2037E48D00389513 /* AirAisaExperience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirAisaExperience.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		317C27F22037E48D00389513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		317C27F42037E48D00389513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		317C27F72037E48D00389513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		317C27FA2037E48D00389513 /* AirAisaExperience.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AirAisaExperience.xcdatamodel; sourceTree = "<group>"; };
+		317C27FC2037E48D00389513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		317C27FF2037E48D00389513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		317C28012037E48D00389513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317C28062037E48D00389513 /* AirAisaExperienceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirAisaExperienceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		317C280A2037E48D00389513 /* AirAisaExperienceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirAisaExperienceTests.swift; sourceTree = "<group>"; };
+		317C280C2037E48D00389513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317C28112037E48D00389513 /* AirAisaExperienceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirAisaExperienceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		317C28152037E48D00389513 /* AirAisaExperienceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirAisaExperienceUITests.swift; sourceTree = "<group>"; };
+		317C28172037E48D00389513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317C28272037E56100389513 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		317C28292037E58B00389513 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		317C282B2037E5A600389513 /* NetworkUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		317C27EC2037E48D00389513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317C28032037E48D00389513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317C280E2037E48D00389513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		317C27E62037E48D00389513 = {
+			isa = PBXGroup;
+			children = (
+				317C27F12037E48D00389513 /* AirAisaExperience */,
+				317C28092037E48D00389513 /* AirAisaExperienceTests */,
+				317C28142037E48D00389513 /* AirAisaExperienceUITests */,
+				317C27F02037E48D00389513 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		317C27F02037E48D00389513 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				317C27EF2037E48D00389513 /* AirAisaExperience.app */,
+				317C28062037E48D00389513 /* AirAisaExperienceTests.xctest */,
+				317C28112037E48D00389513 /* AirAisaExperienceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		317C27F12037E48D00389513 /* AirAisaExperience */ = {
+			isa = PBXGroup;
+			children = (
+				317C27F22037E48D00389513 /* AppDelegate.swift */,
+				317C28262037E54500389513 /* Constants */,
+				317C28252037E51600389513 /* Controllers */,
+				317C28242037E50900389513 /* DataModel */,
+				317C28232037E4F700389513 /* NetworkUtilClass */,
+				317C27F62037E48D00389513 /* Main.storyboard */,
+				317C27FC2037E48D00389513 /* Assets.xcassets */,
+				317C27FE2037E48D00389513 /* LaunchScreen.storyboard */,
+				317C28012037E48D00389513 /* Info.plist */,
+				317C27F92037E48D00389513 /* AirAisaExperience.xcdatamodeld */,
+			);
+			path = AirAisaExperience;
+			sourceTree = "<group>";
+		};
+		317C28092037E48D00389513 /* AirAisaExperienceTests */ = {
+			isa = PBXGroup;
+			children = (
+				317C280A2037E48D00389513 /* AirAisaExperienceTests.swift */,
+				317C280C2037E48D00389513 /* Info.plist */,
+			);
+			path = AirAisaExperienceTests;
+			sourceTree = "<group>";
+		};
+		317C28142037E48D00389513 /* AirAisaExperienceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				317C28152037E48D00389513 /* AirAisaExperienceUITests.swift */,
+				317C28172037E48D00389513 /* Info.plist */,
+			);
+			path = AirAisaExperienceUITests;
+			sourceTree = "<group>";
+		};
+		317C28232037E4F700389513 /* NetworkUtilClass */ = {
+			isa = PBXGroup;
+			children = (
+				317C282B2037E5A600389513 /* NetworkUtility.swift */,
+			);
+			path = NetworkUtilClass;
+			sourceTree = "<group>";
+		};
+		317C28242037E50900389513 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				317C28292037E58B00389513 /* DataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		317C28252037E51600389513 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				317C27F42037E48D00389513 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		317C28262037E54500389513 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				317C28272037E56100389513 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		317C27EE2037E48D00389513 /* AirAisaExperience */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317C281A2037E48D00389513 /* Build configuration list for PBXNativeTarget "AirAisaExperience" */;
+			buildPhases = (
+				317C27EB2037E48D00389513 /* Sources */,
+				317C27EC2037E48D00389513 /* Frameworks */,
+				317C27ED2037E48D00389513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirAisaExperience;
+			productName = AirAisaExperience;
+			productReference = 317C27EF2037E48D00389513 /* AirAisaExperience.app */;
+			productType = "com.apple.product-type.application";
+		};
+		317C28052037E48D00389513 /* AirAisaExperienceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317C281D2037E48D00389513 /* Build configuration list for PBXNativeTarget "AirAisaExperienceTests" */;
+			buildPhases = (
+				317C28022037E48D00389513 /* Sources */,
+				317C28032037E48D00389513 /* Frameworks */,
+				317C28042037E48D00389513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				317C28082037E48D00389513 /* PBXTargetDependency */,
+			);
+			name = AirAisaExperienceTests;
+			productName = AirAisaExperienceTests;
+			productReference = 317C28062037E48D00389513 /* AirAisaExperienceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		317C28102037E48D00389513 /* AirAisaExperienceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317C28202037E48D00389513 /* Build configuration list for PBXNativeTarget "AirAisaExperienceUITests" */;
+			buildPhases = (
+				317C280D2037E48D00389513 /* Sources */,
+				317C280E2037E48D00389513 /* Frameworks */,
+				317C280F2037E48D00389513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				317C28132037E48D00389513 /* PBXTargetDependency */,
+			);
+			name = AirAisaExperienceUITests;
+			productName = AirAisaExperienceUITests;
+			productReference = 317C28112037E48D00389513 /* AirAisaExperienceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		317C27E72037E48D00389513 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Saikat Dey";
+				TargetAttributes = {
+					317C27EE2037E48D00389513 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					317C28052037E48D00389513 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 317C27EE2037E48D00389513;
+					};
+					317C28102037E48D00389513 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 317C27EE2037E48D00389513;
+					};
+				};
+			};
+			buildConfigurationList = 317C27EA2037E48D00389513 /* Build configuration list for PBXProject "AirAisaExperience" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 317C27E62037E48D00389513;
+			productRefGroup = 317C27F02037E48D00389513 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				317C27EE2037E48D00389513 /* AirAisaExperience */,
+				317C28052037E48D00389513 /* AirAisaExperienceTests */,
+				317C28102037E48D00389513 /* AirAisaExperienceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		317C27ED2037E48D00389513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317C28002037E48D00389513 /* LaunchScreen.storyboard in Resources */,
+				317C27FD2037E48D00389513 /* Assets.xcassets in Resources */,
+				317C27F82037E48D00389513 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317C28042037E48D00389513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317C280F2037E48D00389513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		317C27EB2037E48D00389513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317C282A2037E58B00389513 /* DataModel.swift in Sources */,
+				317C282C2037E5A600389513 /* NetworkUtility.swift in Sources */,
+				317C27F52037E48D00389513 /* ViewController.swift in Sources */,
+				317C27FB2037E48D00389513 /* AirAisaExperience.xcdatamodeld in Sources */,
+				317C27F32037E48D00389513 /* AppDelegate.swift in Sources */,
+				317C28282037E56100389513 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317C28022037E48D00389513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317C280B2037E48D00389513 /* AirAisaExperienceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317C280D2037E48D00389513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317C28162037E48D00389513 /* AirAisaExperienceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		317C28082037E48D00389513 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 317C27EE2037E48D00389513 /* AirAisaExperience */;
+			targetProxy = 317C28072037E48D00389513 /* PBXContainerItemProxy */;
+		};
+		317C28132037E48D00389513 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 317C27EE2037E48D00389513 /* AirAisaExperience */;
+			targetProxy = 317C28122037E48D00389513 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		317C27F62037E48D00389513 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				317C27F72037E48D00389513 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		317C27FE2037E48D00389513 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				317C27FF2037E48D00389513 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		317C28182037E48D00389513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		317C28192037E48D00389513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		317C281B2037E48D00389513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BC8EH5TSU;
+				INFOPLIST_FILE = AirAisaExperience/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saikat.AirAisaExperience;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		317C281C2037E48D00389513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BC8EH5TSU;
+				INFOPLIST_FILE = AirAisaExperience/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saikat.AirAisaExperience;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		317C281E2037E48D00389513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BC8EH5TSU;
+				INFOPLIST_FILE = AirAisaExperienceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saikat.AirAisaExperienceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirAisaExperience.app/AirAisaExperience";
+			};
+			name = Debug;
+		};
+		317C281F2037E48D00389513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BC8EH5TSU;
+				INFOPLIST_FILE = AirAisaExperienceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saikat.AirAisaExperienceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirAisaExperience.app/AirAisaExperience";
+			};
+			name = Release;
+		};
+		317C28212037E48D00389513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BC8EH5TSU;
+				INFOPLIST_FILE = AirAisaExperienceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saikat.AirAisaExperienceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AirAisaExperience;
+			};
+			name = Debug;
+		};
+		317C28222037E48D00389513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BC8EH5TSU;
+				INFOPLIST_FILE = AirAisaExperienceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saikat.AirAisaExperienceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AirAisaExperience;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		317C27EA2037E48D00389513 /* Build configuration list for PBXProject "AirAisaExperience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317C28182037E48D00389513 /* Debug */,
+				317C28192037E48D00389513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		317C281A2037E48D00389513 /* Build configuration list for PBXNativeTarget "AirAisaExperience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317C281B2037E48D00389513 /* Debug */,
+				317C281C2037E48D00389513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		317C281D2037E48D00389513 /* Build configuration list for PBXNativeTarget "AirAisaExperienceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317C281E2037E48D00389513 /* Debug */,
+				317C281F2037E48D00389513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		317C28202037E48D00389513 /* Build configuration list for PBXNativeTarget "AirAisaExperienceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317C28212037E48D00389513 /* Debug */,
+				317C28222037E48D00389513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		317C27F92037E48D00389513 /* AirAisaExperience.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				317C27FA2037E48D00389513 /* AirAisaExperience.xcdatamodel */,
+			);
+			currentVersion = 317C27FA2037E48D00389513 /* AirAisaExperience.xcdatamodel */;
+			path = AirAisaExperience.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 317C27E72037E48D00389513 /* Project object */;
+}
